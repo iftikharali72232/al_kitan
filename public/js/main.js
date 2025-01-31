@@ -4,6 +4,16 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+
+function changeLanguage(id='color_mode') {
+  const button = document.getElementById(id);
+  const isArabic = button.innerText === 'AR';
+
+  // Redirect to the appropriate language URL
+  const newLang = isArabic ? 'en' : 'ar';
+  window.location.href = `/lang/${newLang}`;
+}
+
 (function() {
   "use strict";
 

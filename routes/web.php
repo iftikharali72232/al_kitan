@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\LangController;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,19 +15,24 @@ use App\Http\Controllers\LangController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-// Route::post('/login', [LoginController::class, 'login'])->name('login');
+
+// Language switch route
 Route::get('lang/{locale}', [LangController::class, 'setLocale'])->name('setLocale');
-Route::get('/', function () {
-    return redirect()->route('home');
-});
-// routes/web.php
 
-Route::get('/outh', function () {
-    return view('outh');
-});
-Auth::routes();
-Route::group(['middleware' => ['auth']], function() {
-    Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-});
+// ✅ Load home page without redirecting
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
+// Additional routes
+// Route::get('/outh', function () {
+//     return view('outh');
+// });
 
+// // Authentication routes
+// Auth::routes();
+
+// ✅ Protect only specific routes with `auth` middleware
+// Route::group(['middleware' => ['auth']], function() {
+//     Route::get('/dashboard', function () {
+//         return view('dashboard'); // Change this to your dashboard controller if needed
+//     })->name('dashboard');
+// });

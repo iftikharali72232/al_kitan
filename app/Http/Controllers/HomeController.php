@@ -21,10 +21,10 @@ class HomeController extends Controller
      *
      * @return void
      */
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
+    // public function __construct()
+    // {
+    //     $this->middleware('auth');
+    // }
 
     /**
      * Show the application dashboard.
@@ -35,22 +35,22 @@ class HomeController extends Controller
      
     public function index()
     {
-        if (Auth::check()) {
-            // Get the current user
-            $user = Auth::user();
+        // if (Auth::check()) {
+        //     // Get the current user
+        //     $user = Auth::user();
 
-            // Check the user type condition (user type not equal to 0)
-            if ($user->user_type != 0) {
-                // Log out the user
-                Auth::logout();
+        //     // Check the user type condition (user type not equal to 0)
+        //     if ($user->user_type != 0) {
+        //         // Log out the user
+        //         Auth::logout();
 
-                // Redirect to the login page or any other page
-                return redirect()->route('login')->with('error', trans('lang.not_valid_user'));
-            }
-        }
+        //         // Redirect to the login page or any other page
+        //         return redirect()->route('login')->with('error', trans('lang.not_valid_user'));
+        //     }
+        // }
     
         // print_r($today_total); exit;
-        return view('home');
+        return view('/home/index');
     }
     private function topSellingProducts()
     {
