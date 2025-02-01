@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\LangController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PortfolioController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,6 +22,8 @@ Route::get('lang/{locale}', [LangController::class, 'setLocale'])->name('setLoca
 
 // ✅ Load home page without redirecting
 Route::get('/', [HomeController::class, 'index'])->name('home');
+
+Route::get('/portfolio', [PortfolioController::class, 'index'])->name('portfolio');
 
 // Additional routes
 // Route::get('/outh', function () {
