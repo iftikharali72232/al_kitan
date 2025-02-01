@@ -13,28 +13,28 @@
 
                 <div class="flex items-center justify-end">
                     <div class="me-10">
-                        <ul class="flex space-x-10 p-4 uppercase text-lg text-[#224C5A]">
+                        <button id="menu-btn" class="lg:hidden text-[#224C5A] text-2xl focus:outline-none">
+                            ☰
+                        </button>
+
+                        <!-- Navigation Menu -->
+                        <ul id="menu" class="hidden lg:bg-transparent bg-[#e2d1b6] z-50 lg:p-0 p-6 lg:mt-0 mt-10 lg:relative absolute lg:left-auto left-0 lg:w-auto w-full lg:flex lg:space-x-10 lg:p-4 uppercase text-lg text-[#224C5A] flex-col lg:flex-row space-y-4 lg:space-y-0">
                             <li>
                                 <a href="#" class="font-semibold">Overview</a>
                             </li>
-                            
                             <li>
-                                <a href="#" class="">Portfolio</a>
+                                <a href="#">Portfolio</a>
                             </li>
-                            
                             <li>
-                                <a href="#" class="">Innovations</a>
+                                <a href="#">Innovations</a>
                             </li>
-                            
                             <li>
-                                <a href="#" class="">Services</a>
+                                <a href="#">Services</a>
                             </li>
-                            
                             <li>
-                                <a href="#" class="">Contact</a>
+                                <a href="#">Contact</a>
                             </li>
-                        </ul
-                        >
+                        </ul>
                     </div>
 
                     <div class="flex items-center">

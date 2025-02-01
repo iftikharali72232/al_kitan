@@ -5,6 +5,12 @@
 * License: https://bootstrapmade.com/license/
 */
 
+$(document).ready(function () {
+  $("#menu-btn").click(function () {
+      $("#menu").toggleClass("hidden");
+  });
+});
+
 function changeLanguage(id='color_mode') {
   const button = document.getElementById(id);
   const isArabic = button.innerText === 'AR';

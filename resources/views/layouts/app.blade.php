@@ -62,6 +62,7 @@
       
         @include('layouts.frontend_panel.navbar')
         @yield('content')
+        @include('layouts.frontend_panel.footer')
 
       @else
         <main id="main" class="main">
