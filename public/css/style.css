@@ -76,6 +76,13 @@ body {
   background-color: #D6BA8E;
 }
 
+.virtual-bg {
+  background-image: url('../img/virtual.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 /* Base styles for the custom container */
 .container-box {
   width: 100%;
