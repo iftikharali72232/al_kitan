@@ -20,19 +20,19 @@
                         <!-- Navigation Menu -->
                         <ul id="menu" class="hidden lg:bg-transparent bg-[#e2d1b6] z-50 lg:p-0 p-6 lg:mt-0 mt-10 lg:relative absolute lg:left-auto left-0 lg:w-auto w-full lg:flex lg:space-x-10 lg:p-4 uppercase text-lg text-[#224C5A] flex-col lg:flex-row space-y-4 lg:space-y-0">
                             <li>
-                                <a href="#" class="font-semibold">Overview</a>
+                                <a href="/" class="{{ request()->routeIs('home') ? 'font-semibold' : '' }}">Overview</a>
                             </li>
                             <li>
-                                <a href="#">Portfolio</a>
+                                <a href="/portfolio" class="{{ request()->routeIs('portfolio') ? 'font-semibold' : '' }}">Portfolio</a>
                             </li>
                             <li>
-                                <a href="#">Innovations</a>
+                                <a href="/innovations" class="{{ request()->routeIs('innovations') ? 'font-semibold' : '' }}">Innovations</a>
                             </li>
                             <li>
-                                <a href="#">Services</a>
+                                <a href="/services" class="{{ request()->routeIs('services') ? 'font-semibold' : '' }}">Services</a>
                             </li>
                             <li>
-                                <a href="#">Contact</a>
+                                <a href="/contact" class="{{ request()->routeIs('contact') ? 'font-semibold' : '' }}">Contact</a>
                             </li>
                         </ul>
                     </div>
