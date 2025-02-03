@@ -60,6 +60,22 @@ body {
   background-position: center;
 }
 
+.bg-brown-300 {
+  background-color: #F4EDE0;
+}
+
+.bg-brown-400 {
+  background-color: #D6BA8E;
+}
+
+.bg-brown-500 {
+  background-color: #E8D9C0;
+}
+
+.bg-brown-600 {
+  background-color: #D6BA8E;
+}
+
 /* Base styles for the custom container */
 .container-box {
   width: 100%;

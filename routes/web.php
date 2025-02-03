@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\LangController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PortfolioController;
+use App\Http\Controllers\InnovationsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,6 +25,8 @@ Route::get('lang/{locale}', [LangController::class, 'setLocale'])->name('setLoca
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::get('/portfolio', [PortfolioController::class, 'index'])->name('portfolio');
+
+Route::get('/innovations', [InnovationsController::class, 'index'])->name('innovations');
 
 // Additional routes
 // Route::get('/outh', function () {
