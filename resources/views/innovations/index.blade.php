@@ -27,7 +27,7 @@
 
     <div class="bg-brown-300 py-10 md:px-0 px-4 md:text-start text-center">
         <div class="container-box flex lg:flex-row flex-col lg:justify-between">
-            <div class="lg:w-2/3 w-full text-[#216B7D] lg:pr-40">
+            <div class="lg:w-2/3 w-full text-[#216B7D] {{ app()->getLocale() == 'ar' ? 'lg:pl-40' : 'lg:pr-40' }}">
                 <p class="text-2xl">
                     Solar Panels & Energy Storage Systems:
                 </p>
@@ -66,7 +66,7 @@
         </div>
 
         <div class="bg-white p-6 rounded-3xl mt-6">
-            <ul class="text-xl text-[#216B7D] leading-8 list-disc pl-6 space-y-4">
+            <ul class="text-xl text-[#216B7D] leading-8 list-disc {{ app()->getLocale() == 'ar' ? 'pr-6' : 'pl-6' }} space-y-4">
                 <li class="">
                     <p>
                         Green Building Certifications: As sustainability becomes more crucial, Alaska is seeing an increase in LEED-certified buildings (Leadership in Energy and Environmental Design). These buildings prioritize energy efficiency, water conservation, and sustainable materials, creating a long-term positive environmental impact.

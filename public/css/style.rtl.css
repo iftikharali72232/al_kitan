@@ -12,6 +12,78 @@ body {
   background-color: #faf7f2;
 }
 
+.tajawal-extralight {
+  font-family: "Tajawal", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.tajawal-light {
+  font-family: "Tajawal", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.tajawal-regular {
+  font-family: "Tajawal", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tajawal-medium {
+  font-family: "Tajawal", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.tajawal-bold {
+  font-family: "Tajawal", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.tajawal-extrabold {
+  font-family: "Tajawal", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.tajawal-black {
+  font-family: "Tajawal", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.footer-bg {
+  background-image: url('../img/footer-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bg-brown-300 {
+  background-color: #F4EDE0;
+}
+
+.bg-brown-400 {
+  background-color: #D6BA8E;
+}
+
+.bg-brown-500 {
+  background-color: #E8D9C0;
+}
+
+.bg-brown-600 {
+  background-color: #D6BA8E;
+}
+
+.virtual-bg {
+  background-image: url('../img/virtual.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 /* Base styles for the custom container */
 .container-box {
   width: 100%;

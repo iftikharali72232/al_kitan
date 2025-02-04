@@ -55,8 +55,8 @@
             <!-- Card 1 -->
             <div class="flex flex-col items-center">
                 <div class="relative bg-[#935E3B] shadow-lg ps-[20px] pb-[20px] rounded-2xl md:max-w-md overflow-hidden">
-                    <div class="absolute top-0 left-0 h-full w-[20px] bg-transparent rounded-r-2xl flex flex-col justify-center items-center text-white text-xs font-semibold rotate-180">
-                        <div class="flex space-x-4 rotate-90 space-y-1">
+                    <div class="absolute top-0 {{ app()->getLocale() == 'ar' ? 'left-auto right-0' : 'left-0' }} h-full w-[20px] bg-transparent rounded-r-2xl flex flex-col justify-center items-center text-white text-xs font-semibold rotate-180">
+                        <div class="flex justi space-x-4 rotate-90 space-y-1">
                             <p>Vision</p>
                             <p>Vision</p>
                             <p>Vision</p>
@@ -93,29 +93,28 @@
             <!-- Card 2 -->
             <div class="flex flex-col items-center">
                 <div class="relative bg-[#935E3B] shadow-lg ps-[20px] pb-[20px] rounded-2xl md:max-w-md overflow-hidden">
-                    <div class="absolute top-0 left-0 h-full w-[20px] bg-transparent rounded-r-2xl flex flex-col justify-center items-center text-white text-xs font-semibold rotate-180">
+                    <div class="absolute top-0 {{ app()->getLocale() == 'ar' ? 'left-auto right-0' : 'left-0' }} h-full w-[20px] bg-transparent rounded-r-2xl flex flex-col justify-center items-center text-white text-xs font-semibold rotate-180">
                         <div class="flex space-x-4 rotate-90 space-y-1">
-                            <p>Vision</p>
-                            <p>Vision</p>
-                            <p>Vision</p>
-                            <p>Vision</p>
-                            <p>Vision</p>
-                            <p>Vision</p>
-                            <p>Vision</p>
-                            <p>Vision</p>
-                            <p>Vision</p>
+                            <p>Mission</p>
+                            <p>Mission</p>
+                            <p>Mission</p>
+                            <p>Mission</p>
+                            <p>Mission</p>
+                            <p>Mission</p>
+                            <p>Mission</p>
+                            <p>Mission</p>
                         </div>
                     </div>
 
                     <!-- Bottom Border -->
                     <div class="absolute bottom-0 left-0 w-full bg-transparent text-white text-xs font-semibold flex justify-around p-1 rounded-b-2xl">
-                        <span>Vision</span>
-                        <span>Vision</span>
-                        <span>Vision</span>
-                        <span>Vision</span>
-                        <span>Vision</span>
-                        <span>Vision</span>
-                        <span>Vision</span>
+                        <span>Mission</span>
+                        <span>Mission</span>
+                        <span>Mission</span>
+                        <span>Mission</span>
+                        <span>Mission</span>
+                        <span>Mission</span>
+                        <span>Mission</span>
                     </div>
 
                     <div class="bg-white rounded-bl-xl  px-8 py-10"> <!-- Offset due to left border -->

@@ -25,8 +25,8 @@
 
                 <a href="#">
                     <div href="#" class="flex items-center lg:justify-start justify-center gap-4 group">
-                        <img src="{{ asset('img/arrow-right.png') }}" class="w-[70px] transform transition-all duration-300 ease-in-out group-hover:translate-x-2">
-                        <span class="text-[#B07546] uppercase text-[20px] transform transition-all duration-300 ease-in-out group-hover:translate-x-2">Read More</span>
+                        <img src="{{ asset('img/arrow-right.png') }}" class="w-[70px] transform transition-all duration-300 ease-in-out {{ app()->getLocale() == 'ar' ? 'rotate-[180deg] group-hover:translate-x-[-10px]' : 'group-hover:translate-x-2' }}">
+                        <span class="text-[#B07546] uppercase text-[20px] transform transition-all duration-300 ease-in-out {{ app()->getLocale() == 'ar' ? 'group-hover:translate-x-[-10px]' : 'group-hover:translate-x-2' }}">Read More</span>
                     </div>
                 </a>
 
@@ -75,8 +75,8 @@
 
                 <a href="#">
                     <div href="#" class="flex items-center lg:justify-start justify-center gap-4 group">
-                        <img src="{{ asset('img/arrow-right.png') }}" class="w-[70px] transform transition-all duration-300 ease-in-out group-hover:translate-x-2">
-                        <span class="text-[#B07546] uppercase text-[20px] transform transition-all duration-300 ease-in-out group-hover:translate-x-2">Read More</span>
+                        <img src="{{ asset('img/arrow-right.png') }}" class="w-[70px] transform transition-all duration-300 ease-in-out {{ app()->getLocale() == 'ar' ? 'rotate-[180deg] group-hover:translate-x-[-10px]' : 'group-hover:translate-x-2' }}">
+                        <span class="text-[#B07546] uppercase text-[20px] transform transition-all duration-300 ease-in-out {{ app()->getLocale() == 'ar' ? 'group-hover:translate-x-[-10px]' : 'group-hover:translate-x-2' }}">Read More</span>
                     </div>
                 </a>
 
@@ -101,8 +101,8 @@
 
                 <a href="#">
                     <div href="#" class="flex items-center lg:justify-start justify-center gap-4 group">
-                        <img src="{{ asset('img/arrow-right.png') }}" class="w-[70px] transform transition-all duration-300 ease-in-out group-hover:translate-x-2">
-                        <span class="text-[#B07546] uppercase text-[20px] transform transition-all duration-300 ease-in-out group-hover:translate-x-2">Read More</span>
+                        <img src="{{ asset('img/arrow-right.png') }}" class="w-[70px] transform transition-all duration-300 ease-in-out {{ app()->getLocale() == 'ar' ? 'rotate-[180deg] group-hover:translate-x-[-10px]' : 'group-hover:translate-x-2' }}">
+                        <span class="text-[#B07546] uppercase text-[20px] transform transition-all duration-300 ease-in-out {{ app()->getLocale() == 'ar' ? 'group-hover:translate-x-[-10px]' : 'group-hover:translate-x-2' }}">Read More</span>
                     </div>
                 </a>
 
@@ -155,8 +155,8 @@
             <div class="flex lg:justify-end justify-center">
                 <a href="#">
                     <div href="#" class="flex items-center gap-4 group">
-                        <img src="{{ asset('img/arrow-right.png') }}" class="w-[70px] transform transition-all duration-300 ease-in-out group-hover:translate-x-2">
-                        <span class="text-[#B07546] uppercase text-[20px] transform transition-all duration-300 ease-in-out group-hover:translate-x-2">See More</span>
+                        <img src="{{ asset('img/arrow-right.png') }}" class="w-[70px] transform transition-all duration-300 ease-in-out {{ app()->getLocale() == 'ar' ? 'rotate-[180deg] group-hover:translate-x-[-10px]' : 'group-hover:translate-x-2' }}">
+                        <span class="text-[#B07546] uppercase text-[20px] transform transition-all duration-300 ease-in-out {{ app()->getLocale() == 'ar' ? 'group-hover:translate-x-[-10px]' : 'group-hover:translate-x-2' }}">See More</span>
                     </div>
                 </a>
             </div>

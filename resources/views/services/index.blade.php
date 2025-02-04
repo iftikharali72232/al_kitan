@@ -16,7 +16,7 @@
             </div>
 
             <div class="flex lg:flex-row flex-col lg:justify-between">
-                <div class="lg:w-2/3 w-full lg:pr-[100px] mt-6 lg:mb-0 mb-8">
+                <div class="lg:w-2/3 w-full {{ app()->getLocale() == 'ar' ? 'lg:pl-[100px]' : 'lg:pr-[100px]' }} mt-6 lg:mb-0 mb-8">
                     <p class="lg:text-3xl md:text-2xl text-xl text-[#216B7D] text-justify lg:leading-12 md:leading-9">
                         Smart Real Estate with Alkitan is more than just a trend; it’s a revolutionary shift in the way we think about buildings, homes, and urban living. Through the integration of AI, IoT, sustainability practices, and blockchain, Alkitan is leading the way towards a future where technology and real estate merge to create smarter, safer, and more sustainable environments.
                     </p>
@@ -24,16 +24,16 @@
 
                 <div class="lg:w-1/3 w-full">
                     <div class="grid grid-cols-2 gap-4">
-                        <div class="flex lg:justify-normal justify-end">
+                        <div class="flex lg:justify-normal justify-end {{ app()->getLocale() == 'ar' ? 'order-2' : '' }}">
                             <img src="<?= asset("img/rs1.png") ?>" class="lg:w-full w-[200px]">
                         </div>
-                        <div class="">
+                        <div class="{{ app()->getLocale() == 'ar' ? 'order-1' : '' }}">
                             <img src="<?= asset("img/rs2.png") ?>" class="lg:w-full w-[200px]">
                         </div>
-                        <div class="flex lg:justify-normal justify-end">
+                        <div class="flex lg:justify-normal justify-end {{ app()->getLocale() == 'ar' ? 'order-4' : '' }}">
                             <img src="<?= asset("img/rs3.png") ?>" class="lg:w-full w-[200px]">
                         </div>
-                        <div class="">
+                        <div class="{{ app()->getLocale() == 'ar' ? 'order-3' : '' }}">
                             <img src="<?= asset("img/rs4.png") ?>" class="lg:w-full w-[200px]">
                         </div>
                     </div>
