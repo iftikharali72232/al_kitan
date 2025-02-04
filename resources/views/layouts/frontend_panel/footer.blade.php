@@ -1,4 +1,4 @@
-<div class="bg-[#E8D9C0] py-10">
+<div class="bg-[#E8D9C0] py-10 {{ request()->routeIs('contact') ? 'hidden' : '' }}">
     <div class="container-box md:flex items-center justify-between">
         <div class="md:w-1/2 w-full md:text-start text-center">
             <h3 class="text-xl text-[#224C5A] font-semibold uppercase mb-2">Contact Us</h3>
@@ -28,7 +28,7 @@
     </div>
 </div>
 
-<div class="footer-bg py-10">
+<div class="footer-bg py-10 {{ request()->routeIs('contact') ? 'hidden' : '' }}">
     <div class="container-box flex items-center justify-between">
         <div class="lg:w-1/2 w-full">
             <div class="bg-white/20 rounded p-5 grid md:grid-cols-2 gap-4 md:text-start text-center">
@@ -115,4 +115,10 @@
         </div>
         <div class="lg:w-1/2 lg:block hidden"></div>
     </div>
+</div>
+
+<div class="container-box border-t-3 border-[#216B7D] py-5 md:px-0 px-4 flex justify-center">
+    <p class="md:text-xl text-lg text-center bg-gradient-to-r from-[#218599] to-[#B07546] bg-clip-text text-transparent font-semibold">
+        Copyright © 2025 ALKITAN REAL ESTATE. All Rights Reserved
+    </p>
 </div>
