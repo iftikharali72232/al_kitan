@@ -9,7 +9,7 @@
             </div>
 
             <div class="w-full ps-[10px]">
-                <h4 class="lg:text-3xl text-2xl font-semibold uppercase text-[#235967]">Smart Real Estate with Alkitan</h4>
+                <h4 class="lg:text-3xl text-2xl font-semibold uppercase text-[#235967]">{{ trans('lang.2015_tab_p3') }}</h4>
                 <div class="border-b-[3px] border-[#235967] w-[160px]"></div>
                 <p class="lg:text-xl text-lg mt-6">
                     Smart Real Estate with Alkitan is more than just a trend; it’s a revolutionary shift in the way we think about buildings, homes, and urban living. Through the integration of AI, IoT, sustainability practices, and blockchain, Alkitan is leading the way towards a future where technology and real estate merge to create smarter, safer, and more sustainable environments.
