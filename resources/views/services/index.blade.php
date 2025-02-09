@@ -10,7 +10,7 @@
                 </div>
 
                 <div class="ps-2">
-                    <h4 class="md:text-4xl text-2xl font-semibold text-[#235967] mb-2">Innovative & Sustainable Real Estate </h4>
+                    <h4 class="md:text-4xl text-2xl font-semibold text-[#235967] mb-2"> {{ trans('lang.innovative_sustainable_title') }} </h4>
                     <div class="border-b-[3px] border-[#235967] w-[160px]"></div>
                 </div>
             </div>
@@ -18,7 +18,7 @@
             <div class="flex lg:flex-row flex-col lg:justify-between">
                 <div class="lg:w-2/3 w-full {{ app()->getLocale() == 'ar' ? 'lg:pl-[100px]' : 'lg:pr-[100px]' }} mt-6 lg:mb-0 mb-8">
                     <p class="lg:text-3xl md:text-2xl text-xl text-[#216B7D] text-justify lg:leading-12 md:leading-9">
-                        Smart Real Estate with Alkitan is more than just a trend; it’s a revolutionary shift in the way we think about buildings, homes, and urban living. Through the integration of AI, IoT, sustainability practices, and blockchain, Alkitan is leading the way towards a future where technology and real estate merge to create smarter, safer, and more sustainable environments.
+                        {{ trans('lang.innovative_sustainable_desc') }}
                     </p>
                 </div>
 
@@ -49,22 +49,22 @@
             </div>
 
             <div class="w-full flex flex-col justify-center lg:items-start items-center lg:ps-10 ps-0">
-                <h2 class="md:text-3xl text-2xl font-semibold text-[#235967] mb-4">Residential Real Estate Services</h2>
+                <h2 class="md:text-3xl text-2xl font-semibold text-[#235967] mb-4">{{ trans('lang.residential_real_estate_title') }}</h2>
                 <ul class="text-xl text-[#235967] font-light list-disc list-inside lg:mt-4 lg:mt-2 lg:space-y-4">
-                    <li>Home Consultation & Planning</li>
-                    <li>Home Construction & Implementation</li>
-                    <li>Affordable Housing Solutions</li>
+                    <li>{{ trans('lang.residential_real_estate_desc1') }}</li>
+                    <li>{{ trans('lang.residential_real_estate_desc2') }}</li>
+                    <li>{{ trans('lang.residential_real_estate_desc3') }}</li>
                 </ul>
             </div>
         </div>
 
         <div class="grid lg:grid-cols-2 gap-4 lg:mt-0 mt-10  md:px-0 px-4">
             <div class="w-full flex flex-col justify-center lg:items-start items-center lg:pe-10 pe-0 lg:order-1 order-2">
-                <h2 class="md:text-3xl text-2xl font-semibold text-[#235967] mb-4">Commercial Real Estate Services</h2>
+                <h2 class="md:text-3xl text-2xl font-semibold text-[#235967] mb-4">{{ trans('lang.commercial_real_estate_title') }}</h2>
                 <ul class="text-xl text-[#235967] font-light list-disc list-inside lg:mt-4 lg:mt-2 lg:space-y-4">
-                    <li>Commercial Real Estate Consultation & Development</li>
-                    <li>Commercial Construction & Development</li>
-                    <li>Repositioning & Redevelopment of Commercial Properties</li>
+                    <li>{{ trans('lang.commercial_real_estate_desc1') }}</li>
+                    <li>{{ trans('lang.commercial_real_estate_desc2') }}</li>
+                    <li>{{ trans('lang.commercial_real_estate_desc3') }}</li>
                 </ul>
             </div>
 

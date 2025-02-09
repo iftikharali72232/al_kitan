@@ -9,10 +9,10 @@
             </div>
 
             <div class="w-full ps-[10px]">
-                <h4 class="lg:text-3xl text-2xl font-semibold uppercase text-[#235967]">{{ trans('lang.2015_tab_p3') }}</h4>
+                <h4 class="lg:text-3xl text-2xl font-semibold uppercase text-[#235967]">{{ trans('lang.smart_real_title') }}</h4>
                 <div class="border-b-[3px] border-[#235967] w-[160px]"></div>
                 <p class="lg:text-xl text-lg mt-6">
-                    Smart Real Estate with Alkitan is more than just a trend; it’s a revolutionary shift in the way we think about buildings, homes, and urban living. Through the integration of AI, IoT, sustainability practices, and blockchain, Alkitan is leading the way towards a future where technology and real estate merge to create smarter, safer, and more sustainable environments.
+                    {{ trans('lang.smart_real_desc') }}
                 </p>
             </div>
         </div>
@@ -20,7 +20,7 @@
 
     <div class="container-box pt-10 pb-8 flex flex-col lg:items-start items-center">
         <h4 class="lg:text-3xl text-2xl md:text-start text-center font-semibold uppercase text-[#235967]">
-            Energy Efficiency & Sustainability
+            {{ trans('lang.energy_efficiency') }}
         </h4>
         <div class="border-b-[3px] border-[#235967] w-[160px]"></div>
     </div>
@@ -29,10 +29,10 @@
         <div class="container-box flex lg:flex-row flex-col lg:justify-between">
             <div class="lg:w-2/3 w-full text-[#216B7D] {{ app()->getLocale() == 'ar' ? 'lg:pl-40' : 'lg:pr-40' }}">
                 <p class="text-2xl">
-                    Solar Panels & Energy Storage Systems:
+                    {{ trans('lang.solar_panels_title') }}
                 </p>
                 <p class="mt-2 text-xl leading-9">
-                    In Alkitan’s residential developments, solar panels are installed on the rooftops of homes to harness solar energy. For instance, in one of their projects, solar panels generate electricity, and any excess energy is stored in home battery systems. This stored energy can be used to power the home’s heating, cooling, and lighting systems. On days with excessive sun, the system can store surplus energy for later use or feed it back into the grid. The smart system optimizes when to use stored energy based on weather conditions & household consumption, significantly reducing energy costs & environmental impact.
+                    {{ trans('lang.solar_panels_desc') }}
                 </p>
             </div>
 
@@ -60,7 +60,7 @@
     <div class="container-box pt-10 pb-8 md:px-0 px-4">
         <div class="flex flex-col lg:items-start items-center">
             <h4 class="lg:text-3xl text-2xl md:text-start text-center font-semibold uppercase text-[#235967]">
-                Eco-Friendly Community Developments
+                {{ trans('lang.eco_friendly_title') }}
             </h4>
             <div class="border-b-[3px] border-[#235967] w-[160px]"></div>
         </div>
@@ -69,13 +69,13 @@
             <ul class="text-xl text-[#216B7D] leading-8 list-disc {{ app()->getLocale() == 'ar' ? 'pr-6' : 'pl-6' }} space-y-4">
                 <li class="">
                     <p>
-                        Green Building Certifications: As sustainability becomes more crucial, Alaska is seeing an increase in LEED-certified buildings (Leadership in Energy and Environmental Design). These buildings prioritize energy efficiency, water conservation, and sustainable materials, creating a long-term positive environmental impact.
+                        {{ trans('lang.eco_friendly_desc1') }}
                     </p>
                 </li>
 
                 <li class="">
                     <p>
-                        Eco-Friendly Neighborhoods: New real estate developments are incorporating green spaces, sustainable waste management systems, and alternative transportation infrastructure like bike paths and electric vehicle charging stations.
+                        {{ trans('lang.eco_friendly_desc2') }}
                     </p>
                 </li>
             </ul>
@@ -125,7 +125,7 @@
     <div class="container-box pt-10 pb-20 md:px-0 px-4">
         <div class="flex flex-col lg:items-start items-center">
             <h4 class="lg:text-3xl text-2xl md:text-start text-center font-semibold uppercase text-[#235967]">
-                Virtual & Augmented Reality for Property Visualization
+                {{ trans('lang.virtual_title1') }}
             </h4>
             <div class="border-b-[3px] border-[#235967] w-[160px]"></div>
         </div>
@@ -135,9 +135,9 @@
                 <div class="lg:w-2/6 w-1/6 md:block hidden"></div>
 
                 <div class="lg:w-4/6 md:w-5/6 bg-white/80 rounded-3xl md:p-10 p-6">
-                    <h3 class="text-xl font-semibold">Virtual Tours for Buyers and Renters:</h3>
+                    <h3 class="text-xl font-semibold">{{ trans('lang.smart_real_title2') }}</h3>
                     <p class="text-xl mt-2">
-                        To make property viewing easier, Alkitan offers virtual and augmented reality tools that allow prospective buyers or renters to explore homes remotely. For instance, a buyer interested in an apartment can take a 3D virtual tour from the comfort of their home, navigating through the property, examining details, and even visualizing potential renovations in real-time. This allows customers to get a better sense of the space without needing to visit the property in person.
+                        {{ trans('lang.virtual_desc') }}
                     </p>
                 </div>
             </div>
