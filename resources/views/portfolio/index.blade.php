@@ -15,7 +15,7 @@
                 </div>
 
                 <div class="w-full ps-[10px]">
-                    <h4 class="lg:text-3xl text-2xl font-semibold uppercase text-[#235967]">About Us</h4>
+                    <h4 class="lg:text-3xl text-2xl font-semibold uppercase text-[#235967]">{{ trans('lang.about_us_title') }}</h4>
                     <div class="border-b-[3px] border-[#235967] w-[90px]"></div>
                     <p class="lg:text-xl text-lg mt-6">
                         We are Al-Kitan Real Estate, your strategic & ideal partner for real estate development. Founded 15 years ago, we have made the blessed city of Madinah our headquarters. We offer comprehensive real estate services in the local market & dedicate all the efforts of our specialized team to constructing solid and reliable properties.
