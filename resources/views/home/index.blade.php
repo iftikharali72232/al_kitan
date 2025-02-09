@@ -11,22 +11,22 @@
         <div class="grid lg:grid-cols-2 gap-4">
             <div class="lg:pe-[100px] flex flex-col justify-center lg:order-1 order-2">
                 <div class="relative lg:block flex flex-col items-center">
-                    <h2 class="text-[80px] font-bold text-black/3 absolute">Hint</h2>
+                    <h2 class="text-[80px] font-bold text-black/3 absolute">{{ trans('lang.hint_title') }}</h2>
                     <div class="w-[150px] overflow-hidden pt-4 text-[#224C5A]">
                         <h2 class="text-[50px] font-bold leading-11 lg:text-start text-center">01</h2>
                         <div class="border-2 border-gray-600 p-0 m-0"></div>
-                        <h2 class="text-[50px] font-bold lg:text-end text-center leading-11">Hint</h2>
+                        <h2 class="text-[50px] font-bold lg:text-end text-center leading-11">{{ trans('lang.hint_title') }}</h2>
                     </div>
                 </div>
 
                 <p class="text-[28px] lg:text-start text-center leading-10 my-10">
-                    We were established 15 years ago and we continue to lead in real estate development & innovation
+                    {{ trans('lang.hint_desc') }}
                 </p>
 
                 <a href="#">
                     <div href="#" class="flex items-center lg:justify-start justify-center gap-4 group">
                         <img src="{{ asset('img/arrow-right.png') }}" class="w-[70px] transform transition-all duration-300 ease-in-out {{ app()->getLocale() == 'ar' ? 'rotate-[180deg] group-hover:translate-x-[-10px]' : 'group-hover:translate-x-2' }}">
-                        <span class="text-[#B07546] uppercase text-[20px] transform transition-all duration-300 ease-in-out {{ app()->getLocale() == 'ar' ? 'group-hover:translate-x-[-10px]' : 'group-hover:translate-x-2' }}">Read More</span>
+                        <span class="text-[#B07546] uppercase text-[20px] transform transition-all duration-300 ease-in-out {{ app()->getLocale() == 'ar' ? 'group-hover:translate-x-[-10px]' : 'group-hover:translate-x-2' }}">{{ trans('lang.read_more') }}</span>
                     </div>
                 </a>
 
@@ -61,22 +61,22 @@
 
             <div class="lg:ps-[100px] flex flex-col justify-center">
                 <div class="relative flex flex-col lg:items-end items-center">
-                    <h2 class="text-[80px] font-bold text-black/3 absolute">Thoughts</h2>
+                    <h2 class="text-[80px] font-bold text-black/3 absolute">{{ trans('lang.thoughts_title') }}</h2>
                     <div class="w-[250px] overflow-hidden pt-4 text-[#224C5A]">
                         <h2 class="text-[50px] font-bold leading-13 lg:text-end text-center">02</h2>
                         <div class="border-2 border-gray-600 p-0 m-0"></div>
-                        <h2 class="text-[50px] font-bold leading-14 lg:text-start text-center">Thoughts</h2>
+                        <h2 class="text-[50px] font-bold leading-14 lg:text-start text-center">{{ trans('lang.thoughts_title') }}</h2>
                     </div>
                 </div>
 
                 <p class="text-[28px] lg:text-start text-center leading-10 my-10">
-                    We achieve international quality standards in the execution of our real estate projects.
+                    {{ trans('lang.thoughts_desc') }}
                 </p>
 
                 <a href="#">
                     <div href="#" class="flex items-center lg:justify-start justify-center gap-4 group">
                         <img src="{{ asset('img/arrow-right.png') }}" class="w-[70px] transform transition-all duration-300 ease-in-out {{ app()->getLocale() == 'ar' ? 'rotate-[180deg] group-hover:translate-x-[-10px]' : 'group-hover:translate-x-2' }}">
-                        <span class="text-[#B07546] uppercase text-[20px] transform transition-all duration-300 ease-in-out {{ app()->getLocale() == 'ar' ? 'group-hover:translate-x-[-10px]' : 'group-hover:translate-x-2' }}">Read More</span>
+                        <span class="text-[#B07546] uppercase text-[20px] transform transition-all duration-300 ease-in-out {{ app()->getLocale() == 'ar' ? 'group-hover:translate-x-[-10px]' : 'group-hover:translate-x-2' }}">{{ trans('lang.read_more') }}</span>
                     </div>
                 </a>
 
@@ -87,22 +87,22 @@
         <div class="grid lg:grid-cols-2 gap-4">
             <div class="lg:pe-[100px] flex flex-col justify-center lg:order-1 order-2">
                 <div class="relative lg:block flex flex-col items-center">
-                    <h2 class="text-[70px] font-bold text-black/3 absolute">Expertise</h2>
+                    <h2 class="text-[70px] font-bold text-black/3 absolute">{{ trans('lang.expertise_title') }}</h2>
                     <div class="w-[250px] overflow-hidden pt-4 text-[#224C5A]">
                         <h2 class="text-[50px] font-bold leading-13 lg:text-start text-center">03</h2>
                         <div class="border-2 border-gray-600 p-0 m-0"></div>
-                        <h2 class="text-[50px] font-bold lg:text-end text-center leading-14">Expertise</h2>
+                        <h2 class="text-[50px] font-bold lg:text-end text-center leading-14">{{ trans('lang.expertise_title') }}</h2>
                     </div>
                 </div>
 
                 <p class="text-[28px] lg:text-start text-center leading-10 my-10">
-                    A window to the future that helps define our vision & mission.
+                    {{ trans('lang.expertise_desc') }}
                 </p>
 
                 <a href="#">
                     <div href="#" class="flex items-center lg:justify-start justify-center gap-4 group">
                         <img src="{{ asset('img/arrow-right.png') }}" class="w-[70px] transform transition-all duration-300 ease-in-out {{ app()->getLocale() == 'ar' ? 'rotate-[180deg] group-hover:translate-x-[-10px]' : 'group-hover:translate-x-2' }}">
-                        <span class="text-[#B07546] uppercase text-[20px] transform transition-all duration-300 ease-in-out {{ app()->getLocale() == 'ar' ? 'group-hover:translate-x-[-10px]' : 'group-hover:translate-x-2' }}">Read More</span>
+                        <span class="text-[#B07546] uppercase text-[20px] transform transition-all duration-300 ease-in-out {{ app()->getLocale() == 'ar' ? 'group-hover:translate-x-[-10px]' : 'group-hover:translate-x-2' }}">{{ trans('lang.read_more') }}</span>
                     </div>
                 </a>
 
@@ -130,8 +130,8 @@
             </div>
 
             <div class="relative flex flex-col items-center">
-                <h2 class="text-[70px] font-bold text-black/3 absolute text-center">Honored Clients</h2>
-                <h2 class="text-[50px] font-bold text-center pt-[35px]">Honored Clients</h2>
+                <h2 class="text-[70px] font-bold text-black/3 absolute text-center">{{ trans('lang.honored_clients_title') }}</h2>
+                <h2 class="text-[50px] font-bold text-center pt-[35px]">{{ trans('lang.honored_clients_title') }}</h2>
             </div>
 
             <div class="grid lg:grid-cols-4 grid-cols-2 md:gap-4 gap-2 my-6">
@@ -156,7 +156,7 @@
                 <a href="#">
                     <div href="#" class="flex items-center gap-4 group">
                         <img src="{{ asset('img/arrow-right.png') }}" class="w-[70px] transform transition-all duration-300 ease-in-out {{ app()->getLocale() == 'ar' ? 'rotate-[180deg] group-hover:translate-x-[-10px]' : 'group-hover:translate-x-2' }}">
-                        <span class="text-[#B07546] uppercase text-[20px] transform transition-all duration-300 ease-in-out {{ app()->getLocale() == 'ar' ? 'group-hover:translate-x-[-10px]' : 'group-hover:translate-x-2' }}">See More</span>
+                        <span class="text-[#B07546] uppercase text-[20px] transform transition-all duration-300 ease-in-out {{ app()->getLocale() == 'ar' ? 'group-hover:translate-x-[-10px]' : 'group-hover:translate-x-2' }}">{{ trans('lang.see_more') }}</span>
                     </div>
                 </a>
             </div>
