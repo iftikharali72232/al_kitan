@@ -18,7 +18,7 @@
                     <h4 class="lg:text-3xl text-2xl font-semibold uppercase text-[#235967]">{{ trans('lang.about_us_title') }}</h4>
                     <div class="border-b-[3px] border-[#235967] w-[90px]"></div>
                     <p class="lg:text-xl text-lg mt-6">
-                        We are Al-Kitan Real Estate, your strategic & ideal partner for real estate development. Founded 15 years ago, we have made the blessed city of Madinah our headquarters. We offer comprehensive real estate services in the local market & dedicate all the efforts of our specialized team to constructing solid and reliable properties.
+                        {{ trans('lang.about_us_desc1') }}
                     </p>
                 </div>
             </div>
@@ -28,13 +28,13 @@
     <div class="bg-[#D6BA8E] lg:pt-30 md:pt-40 pt-10 md:pb-20 pb-10 md:px-0 px-5 ">
         <div class="container-box text-xl md:text-start text-center">
             <p>
-                Through our dedication and continuous innovation, we have successfully achieved leadership in the local real estate market and expanded the scope of our services to include various fields such as real estate development, property management, and real estate investment consulting. We believe in the importance of building long-term relationships with our clients, always putting their interests first and striving to offer solutions that meet their unique needs.
+                {{ trans('lang.about_us_desc2') }}
             </p>
             <p>
-                Our work philosophy is based on quality, commitment to deadlines, and attention to detail, ensuring the delivery of real estate projects that are efficient and sustainable. Our specialized team of engineers, architects, and consultants works in harmony to provide a flexible work environment that supports innovation and ensures the execution of projects according to the highest standards of safety and security.
+                {{ trans('lang.about_us_desc3') }}
             </p>
             <p>
-                We continue to expand our portfolio of distinguished projects across various real estate sectors to achieve the maximum benefit for both our clients and investors. Additionally, we are committed to applying the highest environmental sustainability standards to ensure the delivery of projects that protect the environment and meet the needs of future generations.
+                {{ trans('lang.about_us_desc4') }}
             </p>
         </div>
     </div>
@@ -46,7 +46,7 @@
             </div>
 
             <div class="w-full ps-[10px]">
-                <h4 class="text-3xl font-semibold uppercase text-[#235967]">Vision & Mission</h4>
+                <h4 class="text-3xl font-semibold uppercase text-[#235967]">{{ trans('lang.vision_mission') }}</h4>
                 <div class="border-b-[3px] border-[#235967] w-[90px]"></div>
             </div>
         </div>        
@@ -57,34 +57,31 @@
                 <div class="relative bg-[#935E3B] shadow-lg ps-[20px] pb-[20px] rounded-2xl md:max-w-md overflow-hidden">
                     <div class="absolute top-0 {{ app()->getLocale() == 'ar' ? 'left-auto right-0' : 'left-0' }} h-full w-[20px] bg-transparent rounded-r-2xl flex flex-col justify-center items-center text-white text-xs font-semibold rotate-180">
                         <div class="flex justi space-x-4 rotate-90 space-y-1">
-                            <p>Vision</p>
-                            <p>Vision</p>
-                            <p>Vision</p>
-                            <p>Vision</p>
-                            <p>Vision</p>
-                            <p>Vision</p>
-                            <p>Vision</p>
+                            <p>{{ trans('lang.vision') }}</p>
+                            <p>{{ trans('lang.vision') }}</p>
+                            <p>{{ trans('lang.vision') }}</p>
+                            <p>{{ trans('lang.vision') }}</p>
+                            <p>{{ trans('lang.vision') }}</p>
+                            <p>{{ trans('lang.vision') }}</p>
+                            <p>{{ trans('lang.vision') }}</p>
                         </div>
                     </div>
 
                     <!-- Bottom Border -->
                     <div class="absolute bottom-0 left-0 w-full bg-transparent text-white text-xs font-semibold flex justify-around p-1 rounded-b-2xl">
-                        <span>Vision</span>
-                        <span>Vision</span>
-                        <span>Vision</span>
-                        <span>Vision</span>
-                        <span>Vision</span>
-                        <span>Vision</span>
-                        <span>Vision</span>
+                        <span>{{ trans('lang.vision') }}</span>
+                        <span>{{ trans('lang.vision') }}</span>
+                        <span>{{ trans('lang.vision') }}</span>
+                        <span>{{ trans('lang.vision') }}</span>
+                        <span>{{ trans('lang.vision') }}</span>
+                        <span>{{ trans('lang.vision') }}</span>
+                        <span>{{ trans('lang.vision') }}</span>
                     </div>
 
                     <div class="bg-white rounded-bl-xl px-8 py-10"> <!-- Offset due to left border -->
-                        <h2 class="text-3xl font-bold text-gray-800 lg:pb-10 pb-6">Vision</h2>
+                        <h2 class="text-3xl font-bold text-gray-800 lg:pb-10 pb-6">{{ trans('lang.vision') }}</h2>
                         <p class="text-gray-700 text-xl mt-2">
-                            Our vision is to lead the way in the development of urban communities
-                            with competitive efficiency, contributing to the advancement of urban
-                            development based on solid and sustainable foundations in the Kingdom
-                            of Saudi Arabia.
+                            {{ trans('lang.vision_desc') }}
                         </p>
                     </div>
                 </div>
@@ -95,32 +92,32 @@
                 <div class="relative bg-[#935E3B] shadow-lg ps-[20px] pb-[20px] rounded-2xl md:max-w-md overflow-hidden">
                     <div class="absolute top-0 {{ app()->getLocale() == 'ar' ? 'left-auto right-0' : 'left-0' }} h-full w-[20px] bg-transparent rounded-r-2xl flex flex-col justify-center items-center text-white text-xs font-semibold rotate-180">
                         <div class="flex space-x-4 rotate-90 space-y-1">
-                            <p>Mission</p>
-                            <p>Mission</p>
-                            <p>Mission</p>
-                            <p>Mission</p>
-                            <p>Mission</p>
-                            <p>Mission</p>
-                            <p>Mission</p>
-                            <p>Mission</p>
+                            <p>{{ trans('lang.mission') }}</p>
+                            <p>{{ trans('lang.mission') }}</p>
+                            <p>{{ trans('lang.mission') }}</p>
+                            <p>{{ trans('lang.mission') }}</p>
+                            <p>{{ trans('lang.mission') }}</p>
+                            <p>{{ trans('lang.mission') }}</p>
+                            <p>{{ trans('lang.mission') }}</p>
+                            <p>{{ trans('lang.mission') }}</p>
                         </div>
                     </div>
 
                     <!-- Bottom Border -->
                     <div class="absolute bottom-0 left-0 w-full bg-transparent text-white text-xs font-semibold flex justify-around p-1 rounded-b-2xl">
-                        <span>Mission</span>
-                        <span>Mission</span>
-                        <span>Mission</span>
-                        <span>Mission</span>
-                        <span>Mission</span>
-                        <span>Mission</span>
-                        <span>Mission</span>
+                        <span>{{ trans('lang.mission') }}</span>
+                        <span>{{ trans('lang.mission') }}</span>
+                        <span>{{ trans('lang.mission') }}</span>
+                        <span>{{ trans('lang.mission') }}</span>
+                        <span>{{ trans('lang.mission') }}</span>
+                        <span>{{ trans('lang.mission') }}</span>
+                        <span>{{ trans('lang.mission') }}</span>
                     </div>
 
                     <div class="bg-white rounded-bl-xl  px-8 py-10"> <!-- Offset due to left border -->
-                        <h2 class="text-3xl font-bold text-gray-800 lg:pb-10 pb-6">Mission</h2>
+                        <h2 class="text-3xl font-bold text-gray-800 lg:pb-10 pb-6">{{ trans('lang.mission') }}</h2>
                         <p class="text-gray-700 text-xl mt-2">
-                            Our mission at Al-Kitan Real Estate is to provide innovative, high-quality real estate solutions that meet our clients' needs and enhance their investments. We focus on delivering outstanding projects on time and in accordance with the highest standards of safety and quality, while prioritizing sustainability and creating residential and commercial environments that align with community aspirations.
+                            {{ trans('lang.mission_desc') }}
                         </p>
                     </div>
                 </div>
@@ -159,15 +156,15 @@
                 <div class="flex lg:flex-row flex-col lg:justify-between lg:p-10">
                     <div class="lg:w-2/3 w-full lg:order-1 order-2 space-y-4 md:text-start text-center">
                         <p class="text-xl">
-                            In 2015, Al-Kitan Real Estate achieved several significant milestones that further strengthened its position as a strategic partner in the local real estate market. This year marked a turning point in our journey, as we successfully completed a series of major real estate projects that addressed the growing demands of the market and aligned with the development of key infrastructure in Madinah.
+                            {{ trans('lang.2015_tab_p1') }}
                         </p>
 
                         <p class="text-xl">
-                            One of our most notable accomplishments in 2015 was our active involvement in the full construction of large-scale, strategic projects that contributed to the enhancement of the nation’s infrastructure. We participated in the construction of vital residential and commercial developments, alongside real estate projects in strategic areas, helping to drive the local economy forward.
+                            {{ trans('lang.2015_tab_p2') }}
                         </p>
 
                         <p class="text-xl">
-                            We also delivered critical public works projects that required the highest standards of quality and efficiency. Among the key projects were the development of roads and infrastructure supporting large residential and commercial complexes, as well as the creation of advanced service facilities aimed at improving the quality of life in Madinah. These projects were completed on time, adhering to the highest standards of safety and quality.
+                            {{ trans('lang.2015_tab_p3') }}
                         </p>
                     </div>
 
