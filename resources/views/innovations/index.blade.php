@@ -135,7 +135,7 @@
                 <div class="lg:w-2/6 w-1/6 md:block hidden"></div>
 
                 <div class="lg:w-4/6 md:w-5/6 bg-white/80 rounded-3xl md:p-10 p-6">
-                    <h3 class="text-xl font-semibold">{{ trans('lang.smart_real_title2') }}</h3>
+                    <h3 class="text-xl font-semibold">{{ trans('lang.virtual_title2') }}</h3>
                     <p class="text-xl mt-2">
                         {{ trans('lang.virtual_desc') }}
                     </p>

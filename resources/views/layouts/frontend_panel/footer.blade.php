@@ -3,7 +3,9 @@
         <div class="md:w-1/2 w-full md:text-start text-center">
             <h3 class="text-xl text-[#224C5A] font-semibold uppercase mb-2">{{ trans('lang.contact_us') }}</h3>
             <p class="text-lg leading-4 mb-8">
-                {{ trans('lang.for_questions_please_speak') }}
+                <!-- {{ trans('lang.for_questions_please_speak') }} -->
+                {!! __('lang.for_questions_please_speak') !!}
+
             </p>
             
             <button type="button" class="hover:bg-[#BE8951] hover:text-white transition-all duration-300 border border-[#224C5A] text-lg font-semibold uppercase px-[30px] py-[10px] rounded">{{ trans('lang.contact') }}</button>
@@ -27,10 +29,10 @@
     </div>
 </div>
 
-<div class="footer-bg py-10 {{ request()->routeIs('contact') ? 'hidden' : '' }}">
+<div class="footer-bg py-10 {{ request()->routeIs('contact') ? 'hidden' : '' }}" dir="ltr">
     <div class="container-box flex items-center justify-between">
         <div class="lg:w-1/2 w-full">
-            <div class="bg-white/20 rounded p-5 grid md:grid-cols-2 gap-4 md:text-start text-center">
+            <div class="bg-white/20 rounded p-5 grid md:grid-cols-2 gap-4 md:text-start text-center" dir="{{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }}">
                 <div class="">
                     <h3 class="text-lg text-white font-semibold uppercase mb-2">{{ trans('lang.explore_alkitan') }}</h3>
                     <ul class="text-white text-lg">

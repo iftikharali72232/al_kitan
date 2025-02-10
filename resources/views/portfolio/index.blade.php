@@ -122,8 +122,19 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>  
     </div>
+
+    <div class="container-box pb-4 flex justify-between">
+        <div class="w-auto">
+            <img src="<?= asset("img/about-star.png") ?>" class="w-[50px]">
+        </div>
+
+        <div class="w-full ps-[10px]">
+            <h4 class="text-3xl font-semibold uppercase text-[#235967]">{{ trans('lang.timeline_of_company') }}</h4>
+            <div class="border-b-[3px] border-[#235967] w-[90px]"></div>
+        </div>
+    </div>  
 
     <div class="bg-[#F4EDE0] py-20">
         <div class="container-box relative">
