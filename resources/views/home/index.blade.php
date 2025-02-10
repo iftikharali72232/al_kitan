@@ -11,11 +11,11 @@
         <div class="grid lg:grid-cols-2 gap-4">
             <div class="lg:pe-[100px] flex flex-col justify-center lg:order-1 order-2">
                 <div class="relative lg:block flex flex-col items-center">
-                    <h2 class="text-[80px] font-bold text-black/3 absolute">{{ trans('lang.hint_title') }}</h2>
+                    <h2 class="text-[80px] font-bold text-black opacity-3 absolute">{{ trans('lang.hint_title') }}</h2>
                     <div class="w-[150px] overflow-hidden pt-4 text-[#224C5A]">
                         <h2 class="text-[50px] font-bold leading-11 lg:text-start text-center">01</h2>
                         <div class="border-2 border-gray-600 p-0 m-0"></div>
-                        <h2 class="text-[50px] font-bold lg:text-end text-center leading-11">{{ trans('lang.hint_title') }}</h2>
+                        <h2 class="text-[50px] font-bold lg:text-end text-center {{ app()->getLocale() == 'ar' ? '' : 'leading-11' }}">{{ trans('lang.hint_title') }}</h2>
                     </div>
                 </div>
 
@@ -61,11 +61,11 @@
 
             <div class="lg:ps-[100px] flex flex-col justify-center">
                 <div class="relative flex flex-col lg:items-end items-center">
-                    <h2 class="text-[80px] font-bold text-black/3 absolute">{{ trans('lang.thoughts_title') }}</h2>
+                    <h2 class="text-[80px] font-bold text-black opacity-3 absolute">{{ trans('lang.thoughts_title') }}</h2>
                     <div class="w-[250px] overflow-hidden pt-4 text-[#224C5A]">
                         <h2 class="text-[50px] font-bold leading-13 lg:text-end text-center">02</h2>
                         <div class="border-2 border-gray-600 p-0 m-0"></div>
-                        <h2 class="text-[50px] font-bold leading-14 lg:text-start text-center">{{ trans('lang.thoughts_title') }}</h2>
+                        <h2 class="text-[50px] font-bold {{ app()->getLocale() == 'ar' ? '' : 'leading-14' }} lg:text-start text-center">{{ trans('lang.thoughts_title') }}</h2>
                     </div>
                 </div>
 
@@ -87,11 +87,11 @@
         <div class="grid lg:grid-cols-2 gap-4">
             <div class="lg:pe-[100px] flex flex-col justify-center lg:order-1 order-2">
                 <div class="relative lg:block flex flex-col items-center">
-                    <h2 class="text-[70px] font-bold text-black/3 absolute">{{ trans('lang.expertise_title') }}</h2>
+                    <h2 class="text-[70px] font-bold text-black opacity-3 absolute">{{ trans('lang.expertise_title') }}</h2>
                     <div class="w-[250px] overflow-hidden pt-4 text-[#224C5A]">
                         <h2 class="text-[50px] font-bold leading-13 lg:text-start text-center">03</h2>
                         <div class="border-2 border-gray-600 p-0 m-0"></div>
-                        <h2 class="text-[50px] font-bold lg:text-end text-center leading-14">{{ trans('lang.expertise_title') }}</h2>
+                        <h2 class="text-[50px] font-bold lg:text-end text-center {{ app()->getLocale() == 'ar' ? '' : 'leading-14' }}">{{ trans('lang.expertise_title') }}</h2>
                     </div>
                 </div>
 
@@ -130,7 +130,7 @@
             </div>
 
             <div class="relative flex flex-col items-center">
-                <h2 class="text-[70px] font-bold text-black/3 absolute text-center">{{ trans('lang.honored_clients_title') }}</h2>
+                <h2 class="text-[70px] font-bold text-black opacity-3 absolute text-center">{{ trans('lang.honored_clients_title') }}</h2>
                 <h2 class="text-[50px] font-bold text-center pt-[35px]">{{ trans('lang.honored_clients_title') }}</h2>
             </div>
 
